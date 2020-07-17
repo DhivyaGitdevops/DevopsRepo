@@ -11,7 +11,7 @@ pipeline {
                 sh mvn test -f DevopsRepo
             }
         }
-    stage('Test') {
+    stage('Deploy') {
             steps {
                 sh mvn package -f DevopsRepo
             }
